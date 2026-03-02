@@ -179,6 +179,8 @@ Moreover, [Figure 6](results/volcano_mve.jpeg) (Mature vs Early) displays the mo
 
 Overall, the volcano plots indicate that the largest transcriptomic transition occurs between Early and biofilm-associated stages.
 
+### 4. Functional Annotation
+
 ![Figure 8](results/GO_tve.jpeg)
 **Figure 8:** Gene Ontology (GO) enrichment analysis for Thin vs Early
 
@@ -198,6 +200,27 @@ Lastly, [Figure 10](results/GO_mvt.jpeg) (Mature vs Thin) highlights transmembra
 
 In contrast, generation of precursor metabolites and energy and energy derivation by oxidation of organic compounds exhibit stronger statistical support (adjusted p-value = 1×10⁻⁴; gene count ≈ 40; gene ratio ≈ 0.07–0.08). Despite involving fewer genes, the lower adjusted p-values indicate that energy production pathways remain significantly regulated during the transition from Thin to Mature biofilm.
 
+![Figure 11](results/CYS3.jpeg)
+
+**Figure 11:** Expression trajectory of CYS3 across biofilm stages
+
+To illustrate stage-specific dynamics, representative genes from enriched pathways were examined.
+
+[Figure 11](results/CYS3.jpeg) (CYS3), associated with oxoacid metabolism, shows low expression in Early, a sharp increase in Thin, and sustained high expression in Mature. This pattern suggests involvement in early biofilm establishment and maintenance.
+
+
+![Figure 12](results/COX1.jpeg)
+
+**Figure 12:** Expression trajectory of COX1 across biofilm stages
+
+[Figure 12](results/COX1.jpeg) (COX1), associated with transmembrane transport and respiratory function, remains relatively stable through Thin but decreases in Mature, indicating stage-specific metabolic modulation. 
+
+![Figure 13](results/BDH1.jpeg)
+
+**Figure 13:** Expression trajectory of BDH1 across biofilm stages
+[Figure 13](results/BDH1.jpeg) (BDH1), involved in small molecule biosynthesis, is highly expressed in Early, decreases during Thin, and increases again in Mature, suggesting dynamic regulation across biofilm development.
+
+These trajectories demonstrate that biofilm formation involves coordinated activation, repression, and fine-tuning of metabolic and transport-related genes.
 
 
 ## Discussion
