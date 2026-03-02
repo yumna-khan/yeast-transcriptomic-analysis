@@ -121,6 +121,18 @@ Initial quantification against the standard S288C cDNA transcriptome yielded a m
 | SRR10551664_Early | 92.0 |
 | SRR10551665_Early | 92.8 |
 
+#### Table 2. Summary of differentially expressed genes (DEGs) across biofilm stage comparisons
+| Pairwise Stage | Total Genes | Upregulated | Downregulated |
+|---|---|---|---|
+| Thin vs Early | 839 | 419 | 420 |
+| Mature vs Early | 1883 | 1043 | 840 |
+| Mature vs Thin | 1127 | 661 | 466 |
+
+Differential expression analysis (adjusted p-value < 0.05, |log₂FC| > 1) revealed stage-specific transcriptional changes. Thin vs Early had 839 DEGs (419 up, 420 down), reflecting balanced activation and repression as biofilm formation begins. Mature vs Early showed 1,883 DEGs (1,043 up, 840 down), indicating extensive transcriptional reprogramming during maturation. Mature vs Thin included 1,127 DEGs (661 up, 466 down), suggesting that the core biofilm program is largely established by the Thin stage, with the Mature stage mainly refining gene expression. Overall, the greatest transcriptional shifts occur between Early and Mature stages.
+
+### 3. Differential Expression
+
+
 **Figure 2:** 
 
 
