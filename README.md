@@ -31,12 +31,51 @@ Overall, the objective of this study is to perform differential expression analy
 
 ## Methods
 ### 1. Data Description
-
+The dataset was obtained from the NCBI BioProject PRJNA592304 and includes three biological replicates for each developmental stage: early biofilm, thin biofilm, and mature biofilm. Transcript quantification with Salmon required a reference transcriptome (cDNA), which was retrieved from Ensembl along with the corresponding GTF annotation file. Initial quantification performed using only protein-coding cDNA sequences resulted in a suboptimal mapping rate of approximately 41%, whereas expected mapping rates are typically around 80–90% [^12]. In yeast, the transcriptome annotation includes both coding (cDNA) and non-coding RNA (ncRNA) sequences [^13]. Therefore, to improve mapping sensitivity and overall alignment performance, the reference was expanded to include ncRNA sequences in addition to cDNA.
 
 ### 2. Quality Control
+Quality control of the raw sequencing reads was performed in Ubuntu using FastQC (v0.12.1), which generates HTML reports summarizing key metrics such as per-base sequence quality, GC content, adapter contamination, and sequence duplication levels. FastQC is widely used in RNA-seq workflows to identify potential technical issues prior to downstream analyses [^3]. 
 
+```
+fastqc *.fastq.gz
+```
+
+To facilitate simultaneous inspection of all samples, MultiQC (v1.25.1) was used to aggregate individual FastQC reports into a single consolidated summary file, enabling efficient cross-sample comparison.
+
+```
+multiqc .
+```
 
 ### 3. Quantification
+Salmon (v1.10.3) requires two main steps: indexing the reference transcriptome and quantifying each sample. 
+
+First, the _Saccharomyces cerevisiae_ cDNA and ncRNA reference files were combined to ensure quantification against the complete transcriptome, as yeast transcriptomes include both coding and non-coding RNA [^13].
+```
+zcat Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa.gz Saccharomyces_cerevisiae.R64-1-1.ncrna.fa.gz > yeast_transcriptome_combined.fa
+```
+
+Next, the combined transcriptome was indexed. The `-t` parameter specifies the transcript FASTA file, and `-i` defines the name of the index directory. While Salmon’s default k-mer size is 31 (optimized for reads ≥75 bp), this was reduced to 21 because the reads in this dataset are 50 bp long [^7]. Using a smaller k-mer improves sensitivity for shorter reads.
+```
+salmon index -t yeast_transcriptome_combined.fa -i combined_index -k 21
+```
+
+Before quantifying all samples, a preliminary test run was performed on a single file to confirm successful indexing and assess the mapping rate. The `-l A` parameter allows Salmon to automatically detect library type (stranded or unstranded), `-r` specifies single-end reads, and `--validateMappings` enables selective alignment, which improves accuracy.
+```
+salmon quant -i combined_index \
+             -l A \
+             -r SRR10551657.fastq.gz \
+             --validateMappings \
+             -o test_boost_quant
+
+# Check mapping rate
+grep "Mapping rate" test_boost_quant/logs/salmon_quant.log
+```
+Once the preliminary test was complete, all nine samples were quantified through a loop script. 
+
+Finally, before proceeding to differential expression analysis, a sanity check was performed to confirm successful quantification. For yeast RNA-seq datasets, mapping rates are typically expected to fall between 80–90% [^12].
+```
+grep "Mapping rate" quants/*_quant/logs/salmon_quant.log
+```
  
 
 ### 4. Differential Expression
