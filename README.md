@@ -1,4 +1,4 @@
-# yeast-transcriptomic-analysis
+# Yeast transcriptomic analysis
 ## General Overview
 
 
@@ -99,12 +99,27 @@ To further characterize stage-specific functional transitions, representative Bi
 
 
 ## Results
+### 1. Quality Control
+An initial assessment of the raw sequencing data confirmed high library quality across all nine samples. The mean Phred quality scores were consistently maintained at 30 or above, indicating a base-calling accuracy of 99.9% and negating the need for further quality trimming. The GC content distribution followed a consistent, bell-shaped profile across all libraries, peaking at approximately 42%, which is characteristic of the _Saccharomyces cerevisiae_ genome [^15].
+
+Analysis of sequence duplication levels revealed a stable distribution, with the percentage of the library plateauing at roughly 25% for sequences with a duplication level exceeding 1,000. Furthermore, adapter contamination was negligible, with levels ranging between 0–1% across the samples. Given that adapter content remained below the threshold for interference with downstream mapping, the sequences were utilized for quantification without additional trimming or filtering.
 
 
+### 2. Quantification
+Initial quantification against the standard S288C cDNA transcriptome yielded a mapping rate of ~41%. However, expanding the reference index to include non-coding RNAs (ncRNA) increased the mapping rate to 89.5%-92%. This indicates that a significant portion of the transcriptome in these flor yeast biofilm stages consists of non-coding elements, which were successfully captured using the expanded index and a k-mer size of k=21.
 
-**Figure 1:** 
-
-
+#### Table 1. Mapping rates for all RNA-seq samples following Salmon quantification
+| Sample Name | Mapping Rate (%) |
+|---|---|
+| SRR10551657_Mature | 89.5 |
+| SRR10551658_Mature | 88.7 |
+| SRR10551659_Mature | 89.4 |
+| SRR10551660_Thin | 91.5 |
+| SRR10551661_Thin | 89.8 |
+| SRR10551662_Thin | 96.2 |
+| SRR10551663_Early | 92.5 |
+| SRR10551664_Early | 92.0 |
+| SRR10551665_Early | 92.8 |
 
 **Figure 2:** 
 
