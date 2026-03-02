@@ -1,6 +1,6 @@
 # _Saccharomyces cerevisiae_ Transcriptomic Analysis
 ## General Overview
-
+This project analyzes RNA-seq data to characterize stage-specific transcriptional changes during velum (floating biofilm) formation in _Saccharomyces cerevisiae_ flor yeast. Using Salmon, DESeq2, and GO enrichment analysis, differential gene expression was assessed across Early, Thin, and Mature stages. Results reveal extensive transcriptional reprogramming during maturation, metabolic restructuring during biofilm initiation, and stage-specific regulation of transport and energy pathways.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -9,7 +9,7 @@
   - [2. Quality Control](#2-quality-control)
   - [3. Quantification](#3-quantification)
   - [4. Differential Expression](#4-differential-expression)
-  - [5. Visualization & Functional Annotation](#5-visualization-&-functional-annotation)
+  - [5. Visualization & Functional Annotation](#5-visualization--functional-annotation)
 - [Results](#results)
 - [Discussion](#discussion)
 - [References](#references)
