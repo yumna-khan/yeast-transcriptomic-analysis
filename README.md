@@ -179,6 +179,26 @@ Moreover, [Figure 6](results/volcano_mve.jpeg) (Mature vs Early) displays the mo
 
 Overall, the volcano plots indicate that the largest transcriptomic transition occurs between Early and biofilm-associated stages.
 
+![Figure 8](results/GO_tve.jpeg)
+**Figure 8:** Gene Ontology (GO) enrichment analysis for Thin vs Early
+
+Over-representation analysis (ORA) was performed to identify enriched Gene Ontology (GO) biological processes among DEGs (Figures 8–10). The gene ratio represents the proportion of input DEGs annotated to a given GO term relative to the total number of DEGs tested. Larger gene ratios indicate that a greater fraction of differentially expressed genes are associated with that biological process, strengthening the functional relevance of the enrichment result. 
+
+[Figure 8](results/GO_tve.jpeg) (Thin vs Early) shows significant enrichment of metabolic processes, including oxoacid metabolic process and organic acid metabolic process (adjusted p-value = 1×10⁻¹⁰; gene count = 100; gene ratio ≈ 0.13). In addition, carbohydrate metabolic process and generation of precursor metabolites and energy display even stronger statistical significance (adjusted p-value = 1×10⁻¹²; gene count = 80; gene ratio ≈ 0.09 - 0.11). The high gene counts combined with extremely low adjusted p-values indicate robust metabolic restructuring as cells transition from planktonic growth to early biofilm formation.
+
+![Figure 9](results/GO_mve.jpeg)
+**Figure 9:** GO enrichment analysis for Mature vs Early
+
+In addition, [Figure 9](results/GO_mve.jpeg) (Mature vs Early) shows significant enrichment of metabolic pathways. Notably, transmembrane transport is highly enriched (adjusted p-value = 5×10⁻⁷; gene count = 150; gene ratio ≈ 0.12), indicating increased transport activity during biofilm maturation. Although generation of precursor metabolites and energy and energy derivation by oxidation of organic compounds exhibit slightly lower adjusted p-values (3×10⁻⁷), transmembrane transport involves the largest number of differentially expressed genes, suggesting that membrane transport processes play a central role in the mature biofilm state.
+
+![Figure 10](results/GO_mvt.jpeg)
+**Figure 10:** GO enrichment analysis for Mature vs Thin
+
+Lastly, [Figure 10](results/GO_mvt.jpeg) (Mature vs Thin) highlights transmembrane transport and small molecule biosynthetic process as key enriched pathways (adjusted p-value = 3×10⁻³; gene ratio ≈ 0.12; gene count ≈ 100). Although statistically significant, these adjusted p-values are less extreme than those observed in comparisons involving the Early stage, suggesting that maturation reflects refinement of nutrient exchange and biosynthetic capacity rather than large-scale metabolic restructuring.
+
+In contrast, generation of precursor metabolites and energy and energy derivation by oxidation of organic compounds exhibit stronger statistical support (adjusted p-value = 1×10⁻⁴; gene count ≈ 40; gene ratio ≈ 0.07–0.08). Despite involving fewer genes, the lower adjusted p-values indicate that energy production pathways remain significantly regulated during the transition from Thin to Mature biofilm.
+
+
 
 ## Discussion
 ### 1. 
