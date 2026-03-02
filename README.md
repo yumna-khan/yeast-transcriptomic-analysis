@@ -147,22 +147,44 @@ Heatmaps of the top 50 differentially expressed genes (DEGs) for each pairwise c
 
 [Figure 2](results/heatmap_tve.jpeg) (Thin vs Early) shows widespread transcriptional changes as the biofilm begins transitioning from initial attachment. Many genes highly expressed in Early are downregulated in Thin, while a subset becomes upregulated, indicating activation of biofilm-associated pathways.
 
-![Figure 2](results/heatmap_mve.jpeg)
+![Figure 3](results/heatmap_mve.jpeg)
 **Figure 3:** Heatmap of top 50 DEGs for Mature vs Early
 
 [Figure 3](results/heatmap_mve.jpeg) (Mature vs Early) demonstrates a broader transcriptional reprogramming. Genes tend to segregate into Early-specific and Mature-specific expression patterns, revealing major shifts in gene expression as the biofilm matures.
 
+![Figure 4](results/heatmap_mvt.jpeg)
+**Figure 4:** Heatmap of top 50 DEGs for Mature vs Thin
+
+[Figure 4](results/heatmap_mvt.jpeg) (Mature vs Thin) reveals fewer dramatic shifts compared to comparisons involving Early, suggesting that many core biofilm programs are already established during the Thin stage and are refined during maturation. There are a few genes that are still in the early stage, indicating they’re late to maturation.
+
+Overall, the heatmaps demonstrate stage-specific transcriptional programs and coordinated gene regulation during biofilm development.
+
+![Figure 5](results/volcano_tve.jpeg)
+**Figure 5:** Volcano plot of differential expression for Thin vs Early
+
+Volcano plots were generated to visualize the relationship between effect size (log₂ fold change) and statistical significance (−log₁₀ adjusted p-value) for each comparison (Figures 5–7).
+
+[Figure 5](results/volcano_tve.jpeg) (Thin vs Early) shows substantial downregulation of Early-stage genes and activation of Thin-stage genes, reflecting a rapid transcriptional shift as cells initiate biofilm formation. It exhibited large effect sizes, with log₂ fold changes ranging from approximately −14 to +7. The most statistically significant gene reached −log₁₀(padj) ≈ 150, indicating extremely strong evidence of differential expression. The majority of upregulated genes fell within |log₂FC| between 0.5 and 5, consistent with coordinated transcriptional remodeling during early biofilm formation.
 
 
+![Figure 6](results/volcano_mve.jpeg)
+**Figure 6:** Volcano plot of differential expression for Mature vs Early
 
-**Figure 4:** 
+Moreover, [Figure 6](results/volcano_mve.jpeg) (Mature vs Early) displays the most extensive transcriptional divergence, with large log₂ fold changes in both directions, ranging from -14 to +11. Some genes exceed |log₂FC| of 5, corresponding to ≥32-fold expression differences, demonstrating large-scale transcriptomic reprogramming during maturation. Several genes exceeded −log₁₀(padj) of 150, reflecting extremely strong statistical support. The broad horizontal dispersion across the log₂ fold change axis indicates that biofilm maturation involves extensive transcriptional reprogramming, with substantial numbers of genes both upregulated and downregulated.
+
+![Figure 7](results/volcano_mvt.jpeg)
+**Figure 7:** Volcano plot of differential expression for Mature vs Thin
+
+[Figure 7](results/volcano_mvt.jpeg) (Mature vs Thin) shows significant differences but generally smaller effect sizes compared to Mature vs Early. This suggests that the Thin stage already establishes much of the biofilm transcriptional program, with the Mature stage fine-tuning specific gene sets rather than initiating a second large-scale shift. More genes are upregulated than downregulated, with log₂ fold changes ranging from approximately −14 to +6. However, fewer genes reached extreme −log₁₀(padj) values compared to contrasts involving Early, suggesting that while effect sizes may be large for specific transcripts, the overall magnitude of global reprogramming is reduced relative to the Early transitions. 
+
+Overall, the volcano plots indicate that the largest transcriptomic transition occurs between Early and biofilm-associated stages.
 
 
 ## Discussion
 ### 1. 
 
 
-### 6. Conclusion
+
 
 
 ## References
