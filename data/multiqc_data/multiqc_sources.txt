@@ -1,0 +1,10 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR10551661	/home/yumna/binf6110/asg2/SRR10551661_fastqc.zip
+FastQC	all_sections	SRR10551664	/home/yumna/binf6110/asg2/SRR10551664_fastqc.zip
+FastQC	all_sections	SRR10551659	/home/yumna/binf6110/asg2/SRR10551659_fastqc.zip
+FastQC	all_sections	SRR10551662	/home/yumna/binf6110/asg2/SRR10551662_fastqc.zip
+FastQC	all_sections	SRR10551658	/home/yumna/binf6110/asg2/SRR10551658_fastqc.zip
+FastQC	all_sections	SRR10551657	/home/yumna/binf6110/asg2/SRR10551657_fastqc.zip
+FastQC	all_sections	SRR10551660	/home/yumna/binf6110/asg2/SRR10551660_fastqc.zip
+FastQC	all_sections	SRR10551663	/home/yumna/binf6110/asg2/SRR10551663_fastqc.zip
+FastQC	all_sections	SRR10551665	/home/yumna/binf6110/asg2/SRR10551665_fastqc.zip

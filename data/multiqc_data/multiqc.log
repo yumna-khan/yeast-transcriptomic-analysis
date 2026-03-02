@@ -1,0 +1,3 @@
+[2026-02-21 20:31:43,106] multiqc.core.version_check                         [WARNING]  MultiQC Version v1.33 now available!
+[2026-02-21 20:31:43,107] multiqc.core.file_search                           [INFO   ]  Search path: /home/yumna/binf6110/asg2
+[2026-02-21 20:31:43,474] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 9 reports
