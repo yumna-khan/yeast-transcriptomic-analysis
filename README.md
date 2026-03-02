@@ -218,6 +218,7 @@ To illustrate stage-specific dynamics, representative genes from enriched pathwa
 ![Figure 13](results/BDH1.jpeg)
 
 **Figure 13:** Expression trajectory of BDH1 across biofilm stages
+
 [Figure 13](results/BDH1.jpeg) (BDH1), involved in small molecule biosynthesis, is highly expressed in Early, decreases during Thin, and increases again in Mature, suggesting dynamic regulation across biofilm development.
 
 These trajectories demonstrate that biofilm formation involves coordinated activation, repression, and fine-tuning of metabolic and transport-related genes.
@@ -252,7 +253,9 @@ Overall, these results show that velum formation is a coordinated developmental 
 [^4]: Ewels, P., Magnusson, M., Lundin, S., & Käller, M. (2016). MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048. https://doi.org/10.1093/bioinformatics/btw354
 [^5]: Williams, C. R., Baccarella, A., Parrish, J. Z., & Kim, C. C. (2016b). Trimming of sequence reads alters RNA-Seq gene expression estimates. BMC Bioinformatics, 17(1), 103. https://doi.org/10.1186/s12859-016-0956-2
 [^6]: Patro, R., Duggal, G., Love, M. I., Irizarry, R. A., & Kingsford, C. (2017). Salmon provides fast and bias-aware quantification of transcript expression. Nature Methods, 14(4), 417–419. https://doi.org/10.1038/nmeth.4197
-[^7]: Wu, D. C., Yao, J., Ho, K. S., Lambowitz, A. M., & Wilke, C. O. (2018). Limitations of alignment-free tools in total RNA-seq quantification. BMC Genomics, 19(1), 510. https://doi.org/10.1186/s12864-018-4869-5
+
+[^7]: Wu, D. C., Yao, J., Ho, K. S., Lambowitz, A. M., & Wilke, C. O. (2018). Limitations of alignment-free tools in total RNA-seq quantification. BMC Genomics, 19(1), 510.https://doi.org/10.1186/s12864-018-4869-5
+
 [^8]: Wang, T., Li, B., Nelson, C. E., & Nabavi, S. (2019). Comparative analysis of differential gene expression analysis tools for single-cell RNA sequencing data. BMC Bioinformatics, 20(1), 40. https://doi.org/10.1186/s12859-019-2599-6
 [^9]: De Oliveira, F. H. S., Gomes, F. A., & Feltes, B. C. (2026). Benchmarking multiple gene ontology enrichment tools reveals high biological significance, ranking, and stringency heterogeneity among datasets. Frontiers in Bioinformatics, 6. https://doi.org/10.3389/fbinf.2026.1755664
 [^10]: Mistry, M. P. a. M. (2017, August 21). Quantitation of transcript abundance using Salmon. Introduction to RNA-seq using high performance computing (Orchestra) - ARCHIVED. https://hbctraining.github.io/Intro-to-rnaseq-hpc-orchestra/lessons/09_salmon.html
