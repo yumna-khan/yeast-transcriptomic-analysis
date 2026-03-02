@@ -1,0 +1,9 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "combined_index",
+    "libType": "A",
+    "unmatedReads": "SRR10551665.fastq.gz",
+    "validateMappings": [],
+    "output": "quants/SRR10551665_quant",
+    "auxDir": "aux_info"
+}
