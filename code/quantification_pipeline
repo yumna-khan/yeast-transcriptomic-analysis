@@ -1,0 +1,48 @@
+### Quality control ###
+
+fastqc *.fastq.gz
+
+multiqc .
+
+### Quantification ###
+
+# Combine cdna and ncrna into one file
+zcat Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa.gz Saccharomyces_cerevisiae.R64-1-1.ncrna.fa.gz > yeast_transcriptome_combined.fa
+
+# Index
+salmon index -t yeast_transcriptome_combined.fa -i combined_index -k 21
+
+# Test quantification on one sample
+salmon quant -i combined_index \
+             -l A \
+             -r SRR10551657.fastq.gz \
+             --validateMappings \
+             -o test_boost_quant
+
+# Check mapping rate
+grep "Mapping rate" test_boost_quant/logs/salmon_quant.log
+
+# Create output directory
+mkdir quants
+
+# Create loop script
+nano salmon_all_samples.sh
+
+#bash
+for sample in *.fastq.gz
+do
+  base=$(basename $sample .fastq.gz)
+  salmon quant \
+    -i combined_index \
+    -l A \
+    -r ${base}.fastq.gz \
+    --validateMappings \
+    -o quants/${base}_quant
+done
+
+# Execute
+chmod +x salmon_all_samples.sh
+./salmon_all_samples.sh
+
+# Sanity check
+grep "Mapping rate" quants/*_quant/logs/salmon_quant.log
