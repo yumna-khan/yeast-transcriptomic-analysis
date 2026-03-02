@@ -132,12 +132,26 @@ Differential expression analysis (adjusted p-value < 0.05, |log₂FC| > 1) revea
 
 ### 3. Differential Expression
 
+![Figure 1](results/PCA.jpeg)
 
-**Figure 2:** 
+**Figure 1:** Principal Component Analysis (PCA) of variance-stabilized transcript counts across biofilm stages
 
+[Figure 1](results/PCA.jpeg) shows the principal component analysis (PCA) of variance-stabilized counts across the three biofilm stages. Principal component 1 (PC1) explains 67% of the total variance and clearly separates the Early stage from the Mature stage, indicating that chronological biofilm progression is the dominant source of transcriptomic variation. Principal component 2 (PC2), accounting for 25% of the variance, separates the Thin stage from both Early and Mature samples.
 
+Together, PC1 and PC2 explain 92% of the total variance, demonstrating strong stage-specific structure in the dataset. The replicates cluster tightly within each condition, indicating high reproducibility and minimal technical variability. Notably, the Thin stage forms its own cluster rather than positioning midway between Early and Mature, suggesting that it represents a distinct transitional transcriptional state rather than a simple intermediate.
 
-**Figure 3:** 
+![Figure 2](results/heatmap_tve.jpeg)
+**Figure 2:** Heatmap of top 50 differentially expressed genes (DEGs) for Thin vs Early
+
+Heatmaps of the top 50 differentially expressed genes (DEGs) for each pairwise comparison are shown in Figures 2–4.
+
+[Figure 2](results/heatmap_tve.jpeg) (Thin vs Early) shows widespread transcriptional changes as the biofilm begins transitioning from initial attachment. Many genes highly expressed in Early are downregulated in Thin, while a subset becomes upregulated, indicating activation of biofilm-associated pathways.
+
+![Figure 2](results/heatmap_mve.jpeg)
+**Figure 3:** Heatmap of top 50 DEGs for Mature vs Early
+
+[Figure 3](results/heatmap_mve.jpeg) (Mature vs Early) demonstrates a broader transcriptional reprogramming. Genes tend to segregate into Early-specific and Mature-specific expression patterns, revealing major shifts in gene expression as the biofilm matures.
+
 
 
 
