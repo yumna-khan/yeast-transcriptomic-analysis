@@ -134,33 +134,33 @@ Differential expression analysis (adjusted p-value < 0.05, |log₂FC| > 1) revea
 
 ![Figure 1](results/PCA.jpeg)
 
-**Figure 1:** Principal Component Analysis (PCA) of variance-stabilized transcript counts across biofilm stages
+**Figure 1:** Principal Component Analysis (PCA) of Yeast Velum Stages. The scatter plot visualizes the transcriptional differences between the Early (red), Mature (green), and Thin (blue) stages. PC1 accounts for 67% of the total variance, primarily separating the Mature stage from the others, while PC2 (25% variance) distinguishes the Thin stage. The tight clustering of replicates indicates high experimental reproducibility.
 
 [Figure 1](results/PCA.jpeg) shows the principal component analysis (PCA) of variance-stabilized counts across the three biofilm stages. Principal component 1 (PC1) explains 67% of the total variance and clearly separates the Early stage from the Mature stage, indicating that chronological biofilm progression is the dominant source of transcriptomic variation. Principal component 2 (PC2), accounting for 25% of the variance, separates the Thin stage from both Early and Mature samples.
 
 Together, PC1 and PC2 explain 92% of the total variance, demonstrating strong stage-specific structure in the dataset. The replicates cluster tightly within each condition, indicating high reproducibility and minimal technical variability. Notably, the Thin stage forms its own cluster rather than positioning midway between Early and Mature, suggesting that it represents a distinct transitional transcriptional state rather than a simple intermediate.
 
 ![Figure 2](results/heatmap_tve.jpeg)
-**Figure 2:** Heatmap of top 50 differentially expressed genes (DEGs) for Thin vs Early
+**Figure 2:** Heatmap of the Top 50 Differentially Expressed Genes (DEGs) between Thin and Early stages. Rows represent individual genes, and columns represent biological replicates. Expression levels are shown as Z-scores, where red indicates relative up-regulation and blue indicates relative down-regulation. Hierarchical clustering was applied to both genes and samples to identify co-regulated gene modules.
 
 Heatmaps of the top 50 differentially expressed genes (DEGs) for each pairwise comparison are shown in Figures 2–4.
 
 [Figure 2](results/heatmap_tve.jpeg) (Thin vs Early) shows widespread transcriptional changes as the biofilm begins transitioning from initial attachment. Many genes highly expressed in Early are downregulated in Thin, while a subset becomes upregulated, indicating activation of biofilm-associated pathways.
 
 ![Figure 3](results/heatmap_mve.jpeg)
-**Figure 3:** Heatmap of top 50 DEGs for Mature vs Early
+**Figure 3:** Heatmap of the Top 50 Differentially Expressed Genes (DEGs) between Mature and Early stages. Rows represent individual genes, and columns represent biological replicates. Expression levels are shown as Z-scores, where red indicates relative up-regulation and blue indicates relative down-regulation. Hierarchical clustering was applied to both genes and samples to identify co-regulated gene modules.
 
 [Figure 3](results/heatmap_mve.jpeg) (Mature vs Early) demonstrates a broader transcriptional reprogramming. Genes tend to segregate into Early-specific and Mature-specific expression patterns, revealing major shifts in gene expression as the biofilm matures.
 
 ![Figure 4](results/heatmap_mvt.jpeg)
-**Figure 4:** Heatmap of top 50 DEGs for Mature vs Thin
+**Figure 4:** Heatmap of the Top 50 Differentially Expressed Genes (DEGs) between Mature and Thin stages. Rows represent individual genes, and columns represent biological replicates. Expression levels are shown as Z-scores, where red indicates relative up-regulation and blue indicates relative down-regulation. Hierarchical clustering was applied to both genes and samples to identify co-regulated gene modules.
 
 [Figure 4](results/heatmap_mvt.jpeg) (Mature vs Thin) reveals fewer dramatic shifts compared to comparisons involving Early, suggesting that many core biofilm programs are already established during the Thin stage and are refined during maturation. There are a few genes that are still in the early stage, indicating they’re late to maturation.
 
 Overall, the heatmaps demonstrate stage-specific transcriptional programs and coordinated gene regulation during biofilm development.
 
 ![Figure 5](results/volcano_tve.jpeg)
-**Figure 5:** Volcano plot of differential expression for Thin vs Early
+**Figure 5:** Volcano Plot comparing Thin vs. Early transcriptional profiles. Each point represents a single gene. The x-axis shows the log2 Fold Change (log2FC), and the y-axis shows the statistical significance (-log10 Adjusted P-value). Red points indicate significantly up-regulated genes (log2FC > 1, adj. p < 0.05), blue points indicate significantly down-regulated genes (log2FC < -1, adj. p < 0.05), and grey points represent genes that did not meet the significance threshold.
 
 Volcano plots were generated to visualize the relationship between effect size (log₂ fold change) and statistical significance (−log₁₀ adjusted p-value) for each comparison (Figures 5–7).
 
@@ -168,12 +168,12 @@ Volcano plots were generated to visualize the relationship between effect size (
 
 
 ![Figure 6](results/volcano_mve.jpeg)
-**Figure 6:** Volcano plot of differential expression for Mature vs Early
+**Figure 6:** Volcano Plot comparing Mature vs. Early transcriptional profiles. Each point represents a single gene. The x-axis shows the log2 Fold Change (log2FC), and the y-axis shows the statistical significance (-log10 Adjusted P-value). Red points indicate significantly up-regulated genes (log2FC > 1, adj. p < 0.05), blue points indicate significantly down-regulated genes (log2FC < -1, adj. p < 0.05), and grey points represent genes that did not meet the significance threshold.
 
 Moreover, [Figure 6](results/volcano_mve.jpeg) (Mature vs Early) displays the most extensive transcriptional divergence, with large log₂ fold changes in both directions, ranging from -14 to +11. Some genes exceed |log₂FC| of 5, corresponding to ≥32-fold expression differences, demonstrating large-scale transcriptomic reprogramming during maturation. Several genes exceeded −log₁₀(padj) of 150, reflecting extremely strong statistical support. The broad horizontal dispersion across the log₂ fold change axis indicates that biofilm maturation involves extensive transcriptional reprogramming, with substantial numbers of genes both upregulated and downregulated.
 
 ![Figure 7](results/volcano_mvt.jpeg)
-**Figure 7:** Volcano plot of differential expression for Mature vs Thin
+**Figure 7:** Volcano Plot comparing Mature vs. Thin transcriptional profiles. Each point represents a single gene. The x-axis shows the log2 Fold Change (log2FC), and the y-axis shows the statistical significance (-log10 Adjusted P-value). Red points indicate significantly up-regulated genes (log2FC > 1, adj. p < 0.05), blue points indicate significantly down-regulated genes (log2FC < -1, adj. p < 0.05), and grey points represent genes that did not meet the significance threshold.
 
 [Figure 7](results/volcano_mvt.jpeg) (Mature vs Thin) shows significant differences but generally smaller effect sizes compared to Mature vs Early. This suggests that the Thin stage already establishes much of the biofilm transcriptional program, with the Mature stage fine-tuning specific gene sets rather than initiating a second large-scale shift. More genes are upregulated than downregulated, with log₂ fold changes ranging from approximately −14 to +6. However, fewer genes reached extreme −log₁₀(padj) values compared to contrasts involving Early, suggesting that while effect sizes may be large for specific transcripts, the overall magnitude of global reprogramming is reduced relative to the Early transitions. 
 
@@ -182,19 +182,19 @@ Overall, the volcano plots indicate that the largest transcriptomic transition o
 ### 4. Functional Annotation
 
 ![Figure 8](results/GO_tve.jpeg)
-**Figure 8:** Gene Ontology (GO) enrichment analysis for Thin vs Early
+**Figure 8:** Gene Ontology (GO) Enrichment Analysis for Thin vs. Early stages. This dot plot displays the top significantly enriched biological processes identified via Over-Representation Analysis (ORA). The GeneRatio (x-axis) indicates the proportion of DEGs relative to the total genes in the GO term. Dot size corresponds to the absolute count of genes, and color intensity represents the adjusted p-value, highlighting a shift toward metabolic and carboxylic acid processes.
 
 Over-representation analysis (ORA) was performed to identify enriched Gene Ontology (GO) biological processes among DEGs (Figures 8–10). The gene ratio represents the proportion of input DEGs annotated to a given GO term relative to the total number of DEGs tested. Larger gene ratios indicate that a greater fraction of differentially expressed genes are associated with that biological process, strengthening the functional relevance of the enrichment result. 
 
 [Figure 8](results/GO_tve.jpeg) (Thin vs Early) shows significant enrichment of metabolic processes, including oxoacid metabolic process and organic acid metabolic process (adjusted p-value = 1×10⁻¹⁰; gene count = 100; gene ratio ≈ 0.13). In addition, carbohydrate metabolic process and generation of precursor metabolites and energy display even stronger statistical significance (adjusted p-value = 1×10⁻¹²; gene count = 80; gene ratio ≈ 0.09 - 0.11). The high gene counts combined with extremely low adjusted p-values indicate robust metabolic restructuring as cells transition from planktonic growth to early biofilm formation.
 
 ![Figure 9](results/GO_mve.jpeg)
-**Figure 9:** GO enrichment analysis for Mature vs Early
+**Figure 9:** Gene Ontology (GO) Enrichment Analysis for Mature vs. Early stages. This dot plot displays the top significantly enriched biological processes identified via Over-Representation Analysis (ORA). The GeneRatio (x-axis) indicates the proportion of DEGs relative to the total genes in the GO term. Dot size corresponds to the absolute count of genes, and color intensity represents the adjusted p-value, highlighting a shift toward metabolic and carboxylic acid processes.
 
 In addition, [Figure 9](results/GO_mve.jpeg) (Mature vs Early) shows significant enrichment of metabolic pathways. Notably, transmembrane transport is highly enriched (adjusted p-value = 5×10⁻⁷; gene count = 150; gene ratio ≈ 0.12), indicating increased transport activity during biofilm maturation. Although generation of precursor metabolites and energy and energy derivation by oxidation of organic compounds exhibit slightly lower adjusted p-values (3×10⁻⁷), transmembrane transport involves the largest number of differentially expressed genes, suggesting that membrane transport processes play a central role in the mature biofilm state.
 
 ![Figure 10](results/GO_mvt.jpeg)
-**Figure 10:** GO enrichment analysis for Mature vs Thin
+**Figure 10:** Gene Ontology (GO) Enrichment Analysis for Mature vs. Thin stages. This dot plot displays the top significantly enriched biological processes identified via Over-Representation Analysis (ORA). The GeneRatio (x-axis) indicates the proportion of DEGs relative to the total genes in the GO term. Dot size corresponds to the absolute count of genes, and color intensity represents the adjusted p-value, highlighting a shift toward metabolic and carboxylic acid processes.
 
 Lastly, [Figure 10](results/GO_mvt.jpeg) (Mature vs Thin) highlights transmembrane transport and small molecule biosynthetic process as key enriched pathways (adjusted p-value = 3×10⁻³; gene ratio ≈ 0.12; gene count ≈ 100). Although statistically significant, these adjusted p-values are less extreme than those observed in comparisons involving the Early stage, suggesting that maturation reflects refinement of nutrient exchange and biosynthetic capacity rather than large-scale metabolic restructuring.
 
@@ -202,7 +202,7 @@ In contrast, generation of precursor metabolites and energy and energy derivatio
 
 ![Figure 11](results/CYS3.jpeg)
 
-**Figure 11:** Expression trajectory of CYS3 across biofilm stages
+**Figure 11:** Expression Trajectories for CYS3 Genes. The line plots illustrate the expression patterns of CYS3 across the Early, Thin, and Mature biofilm stages. The y-axis represents Normalized Expression following Variance Stabilizing Transformation (VST) to ensure homoscedasticity across the dynamic range. Each coloured line represents an individual biological replicate (n=3), demonstrating the consistency of gene regulation during the transition between developmental stages.
 
 To illustrate stage-specific dynamics, representative genes from enriched pathways were examined.
 
@@ -211,13 +211,13 @@ To illustrate stage-specific dynamics, representative genes from enriched pathwa
 
 ![Figure 12](results/COX1.jpeg)
 
-**Figure 12:** Expression trajectory of COX1 across biofilm stages
+**Figure 12:** Expression Trajectories for COX1 Genes. The line plots illustrate the expression patterns of COX1 across the Early, Thin, and Mature biofilm stages. The y-axis represents Normalized Expression following Variance Stabilizing Transformation (VST) to ensure homoscedasticity across the dynamic range. Each coloured line represents an individual biological replicate (n=3), demonstrating the consistency of gene regulation during the transition between developmental stages.
 
 [Figure 12](results/COX1.jpeg) (COX1), associated with transmembrane transport and respiratory function, remains relatively stable through Thin but decreases in Mature, indicating stage-specific metabolic modulation. 
 
 ![Figure 13](results/BDH1.jpeg)
 
-**Figure 13:** Expression trajectory of BDH1 across biofilm stages
+**Figure 13:** Expression Trajectories for BDH1 Genes. The line plots illustrate the expression patterns of BDH1 across the Early, Thin, and Mature biofilm stages. The y-axis represents Normalized Expression following Variance Stabilizing Transformation (VST) to ensure homoscedasticity across the dynamic range. Each coloured line represents an individual biological replicate (n=3), demonstrating the consistency of gene regulation during the transition between developmental stages.
 
 [Figure 13](results/BDH1.jpeg) (BDH1), involved in small molecule biosynthesis, is highly expressed in Early, decreases during Thin, and increases again in Mature, suggesting dynamic regulation across biofilm development.
 
